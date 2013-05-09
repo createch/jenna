@@ -8,6 +8,7 @@
 @import "sass-mediaqueries/_media-queries"
 @import "variables"
 @import "icons"
+@import "webfonts"
 
 // Reasonable Breakpoint Values
 $desktop-wide:          71.25em  // 1140px
@@ -88,7 +89,7 @@ body
     height: auto
     position: absolute
     left: 10%
-    top: 20%
+    top: 10%
     img
         height: auto
         width: auto
@@ -102,6 +103,7 @@ body
     position: absolute
     a
         display: inline-block
+        margin-bottom: 8px
 
 .note
     position: absolute 
@@ -115,17 +117,28 @@ body
     width: 320px
     position: absolute
     left: 0
-    top: 50%
-    text-align: center
+    bottom: 0
+    margin-bottom: 300px
+    text-align: right
     .now
+        padding-right: 20px
         height: 30px
+        line-height: 30px
         background: $greyr
         color: $blue
+        font-family: $novecento
+        letter-spacing: 3px
+        font-size: 13px
     .song
         height: 70px
+        line-height: 70px
         background-color: $blue
-        clolor: $greyr
-
+        color: $greyr
+        font-family: $gothic
+        text-transform: uppercase
+        font-size: 50px
+        padding-right: 20px
+        letter-spacing: 3px
 
 
 

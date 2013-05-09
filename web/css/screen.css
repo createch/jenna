@@ -162,7 +162,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   height: 38px;
 }
 
-/* line 23, ../sass/screen.sass */
+/* line 24, ../sass/screen.sass */
 body {
   background: url("/img/bg.jpg") repeat bottom center;
   background-size: auto 125%;
@@ -170,58 +170,58 @@ body {
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  /* line 28, ../sass/screen.sass */
+  /* line 29, ../sass/screen.sass */
   body {
     background-size: 180% auto;
     background-position-x: right;
   }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-  /* line 32, ../sass/screen.sass */
+  /* line 33, ../sass/screen.sass */
   body {
     background-size: 110% auto;
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) and (orientation: portrait) {
-  /* line 35, ../sass/screen.sass */
+  /* line 36, ../sass/screen.sass */
   body {
     background-size: auto 100%;
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) and (orientation: portrait) {
-  /* line 38, ../sass/screen.sass */
+  /* line 39, ../sass/screen.sass */
   body {
     background-size: 200% auto;
     background-position-x: right;
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) and (orientation: landscape) {
-  /* line 42, ../sass/screen.sass */
+  /* line 43, ../sass/screen.sass */
   body {
     background-size: 110% auto;
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) and (orientation: portrait) {
-  /* line 45, ../sass/screen.sass */
+  /* line 46, ../sass/screen.sass */
   body {
     background-size: 200% auto;
     background-position-x: right;
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) and (orientation: landscape) {
-  /* line 49, ../sass/screen.sass */
+  /* line 50, ../sass/screen.sass */
   body {
     background-size: 110% auto;
   }
 }
 @media screen and (min-width: 1500px) {
-  /* line 52, ../sass/screen.sass */
+  /* line 53, ../sass/screen.sass */
   body {
     background: red;
     background-size: auto 125%;
   }
 }
-/* line 56, ../sass/screen.sass */
+/* line 57, ../sass/screen.sass */
 .masthead {
   background-color: #242424;
   position: fixed;
@@ -230,7 +230,7 @@ body {
   z-index: 100;
 }
 
-/* line 63, ../sass/screen.sass */
+/* line 64, ../sass/screen.sass */
 .footer {
   height: 90px;
   background-color: #1e1e1e;
@@ -242,7 +242,7 @@ body {
   z-index: 100;
 }
 
-/* line 73, ../sass/screen.sass */
+/* line 74, ../sass/screen.sass */
 .content {
   position: absolute;
   bottom: 0;
@@ -251,7 +251,7 @@ body {
   max-width: 70%;
   max-height: 90%;
 }
-/* line 80, ../sass/screen.sass */
+/* line 81, ../sass/screen.sass */
 .content .jenna {
   height: auto;
   width: auto;
@@ -259,22 +259,22 @@ body {
   max-width: 100%;
 }
 
-/* line 86, ../sass/screen.sass */
+/* line 87, ../sass/screen.sass */
 .logo {
   width: 430px;
   height: auto;
   position: absolute;
   left: 10%;
-  top: 20%;
+  top: 10%;
 }
-/* line 92, ../sass/screen.sass */
+/* line 93, ../sass/screen.sass */
 .logo img {
   height: auto;
   width: auto;
   max-width: 100%;
 }
 
-/* line 97, ../sass/screen.sass */
+/* line 98, ../sass/screen.sass */
 .social {
   width: 50px;
   margin-top: 10%;
@@ -282,45 +282,58 @@ body {
   top: 5%;
   position: absolute;
 }
-/* line 103, ../sass/screen.sass */
+/* line 104, ../sass/screen.sass */
 .social a {
   display: inline-block;
+  margin-bottom: 8px;
 }
 
-/* line 106, ../sass/screen.sass */
+/* line 108, ../sass/screen.sass */
 .note {
   position: absolute;
   bottom: 0;
   margin-bottom: 50px;
   text-shadow: inset 0 0 50px black;
 }
-/* line 111, ../sass/screen.sass */
+/* line 113, ../sass/screen.sass */
 .note img {
   width: 400px;
 }
 
-/* line 114, ../sass/screen.sass */
+/* line 116, ../sass/screen.sass */
 .ribbon {
   width: 320px;
   position: absolute;
   left: 0;
-  top: 50%;
-  text-align: center;
+  bottom: 0;
+  margin-bottom: 300px;
+  text-align: right;
 }
-/* line 120, ../sass/screen.sass */
+/* line 123, ../sass/screen.sass */
 .ribbon .now {
+  padding-right: 20px;
   height: 30px;
+  line-height: 30px;
   background: #2c3232;
   color: #b7e0d8;
+  font-family: NovecentowideLightBold, "Helvetica Neue", Arial, sans-serif;
+  letter-spacing: 3px;
+  font-size: 13px;
 }
-/* line 124, ../sass/screen.sass */
+/* line 132, ../sass/screen.sass */
 .ribbon .song {
   height: 70px;
+  line-height: 70px;
   background-color: #b7e0d8;
-  clolor: #2c3232;
+  color: #2c3232;
+  font-family: "League Gothic", "Helvetica Neue", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 50px;
+  padding-right: 20px;
+  letter-spacing: 3px;
 }
 
-/* line 132, ../sass/screen.sass */
+/* line 145, ../sass/screen.sass */
 .container {
   padding-left: 20px;
   padding-right: 20px;
