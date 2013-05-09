@@ -1,0 +1,6 @@
+[submodule "web/sass/1140px"]
+	path = web/sass/1140px
+	url = https://github.com/mcgriddles/1140px-Responsive-SASS-Grid.git
+[submodule "web/sass/sass-mediaqueries"]
+	path = web/sass/sass-mediaqueries
+	url = https://github.com/paranoida/sass-mediaqueries.git

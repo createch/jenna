@@ -4,6 +4,75 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset"
+@import "1140px/1140"
+@import "sass-mediaqueries/_media-queries"
+@import "variables"
 
+// Reasonable Breakpoint Values
+$desktop-wide:          71.25em  // 1140px
+$desktop-small:         64.00em  // 1024px
+$tablet-portrait:       48.00em  // 768px
+$phone-wide-landscape:  35.50em  // 568px
+$phone-landscape:       30.00em  // 480px
+$phone-portrait:        20.00em  // 320px
+
+$column-killer-breakpoint: $phone-landscape  // 640px
+
+// Scale the background to the device
 body
-    background: red
+    background: url('/img/bg.jpg') repeat top center
+    background-size: auto 105%
+    background-attachment: fixed
+@include ipad-portrait
+    body
+        background-size: 180% auto
+        background-position-x: right
+@include ipad-landscape
+    body
+        background-size: 110% auto
+@include iphone4-portrait
+    body
+        background-size: auto 100%
+@include iphone4-portrait
+    body
+        background-size: 200% auto
+        background-position-x: right
+@include iphone4-landscape
+    body
+        background-size: 110% auto
+@include iphone5-portrait
+    body
+        background-size: 200% auto
+        background-position-x: right
+@include iphone5-landscape
+    body
+        background-size: 110% auto
+@include min-screen(1500px) // not sure if this is working
+    body
+        background: red
+        background-size: auto 125%
+
+.masthead
+    background-color: $greyh
+    position: fixed
+    width: 100%
+    height: 12px
+    z-index: 100
+
+.footer
+    height: 90px
+    background-color: $greyf
+    position: fixed
+    bottom: 0
+    margin-top: -90px
+    width: 100%
+    display: block
+    z-index: 100
+
+.jenna
+    max-height: 100%
+    width: auto
+
+.container
+    @include container
+    // background: blue

@@ -5,6 +5,7 @@ import re
 
 
 def main():
+    """ Kill the python server """
     try:
         pid = subprocess.check_output("lsof -i :8000 -F".split(" "))
     except subprocess.CalledProcessError:
