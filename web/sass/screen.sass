@@ -7,6 +7,7 @@
 @import "1140px/1140"
 @import "sass-mediaqueries/_media-queries"
 @import "variables"
+@import "icons"
 
 // Reasonable Breakpoint Values
 $desktop-wide:          71.25em  // 1140px
@@ -20,8 +21,8 @@ $column-killer-breakpoint: $phone-landscape  // 640px
 
 // Scale the background to the device
 body
-    background: url('/img/bg.jpg') repeat top center
-    background-size: auto 105%
+    background: url('/img/bg.jpg') repeat bottom center
+    background-size: auto 125%
     background-attachment: fixed
 @include ipad-portrait
     body
@@ -69,10 +70,66 @@ body
     display: block
     z-index: 100
 
-.jenna
-    max-height: 100%
-    width: auto
+.content
+    position: absolute
+    bottom: 0
+    margin-bottom: 80px
+    right: 10%
+    max-width: 70%
+    max-height: 90%
+    .jenna
+        height: auto
+        width: auto
+        max-height: 100%
+        max-width: 100%
+
+.logo
+    width: 430px
+    height: auto
+    position: absolute
+    left: 10%
+    top: 20%
+    img
+        height: auto
+        width: auto
+        max-width: 100%
+
+.social
+    width: 50px
+    margin-top: 10%
+    right: 5%
+    top: 5%
+    position: absolute
+    a
+        display: inline-block
+
+.note
+    position: absolute 
+    bottom: 0
+    margin-bottom: 50px
+    text-shadow: inset 0 0 50px #000
+    img
+        width: 400px
+
+.ribbon
+    width: 320px
+    position: absolute
+    left: 0
+    top: 50%
+    text-align: center
+    .now
+        height: 30px
+        background: $greyr
+        color: $blue
+    .song
+        height: 70px
+        background-color: $blue
+        clolor: $greyr
+
+
+
 
 .container
     @include container
+    text-align: center
     // background: blue

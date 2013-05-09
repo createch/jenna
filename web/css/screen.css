@@ -67,66 +67,161 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 22, ../sass/screen.sass */
+/* line 1, ../sass/icons.scss */
+.fb {
+  background: url("../img/iconsheet.png") no-repeat 0 0;
+  width: 44px;
+  height: 43px;
+}
+
+/* line 6, ../sass/icons.scss */
+.fb:hover {
+  background: url("../img/iconsheet.png") no-repeat -53px 0;
+}
+
+/* line 9, ../sass/icons.scss */
+.tw {
+  background: url("../img/iconsheet.png") no-repeat 0 -50px;
+  width: 44px;
+  height: 44px;
+}
+
+/* line 14, ../sass/icons.scss */
+.tw:hover {
+  background: url("../img/iconsheet.png") no-repeat -53px -50px;
+}
+
+/* line 17, ../sass/icons.scss */
+.yt {
+  background: url("../img/iconsheet.png") no-repeat 0 -102px;
+  width: 44px;
+  height: 44px;
+}
+
+/* line 22, ../sass/icons.scss */
+.yt:hover {
+  background: url("../img/iconsheet.png") no-repeat -53px -102px;
+}
+
+/* line 25, ../sass/icons.scss */
+.in {
+  background: url("../img/iconsheet.png") no-repeat 0 -156px;
+  width: 44px;
+  height: 44px;
+}
+
+/* line 30, ../sass/icons.scss */
+.in:hover {
+  background: url("../img/iconsheet.png") no-repeat -53px -156px;
+}
+
+/* line 33, ../sass/icons.scss */
+.pin {
+  background: url("../img/iconsheet.png") no-repeat 0 -209px;
+  width: 44px;
+  height: 43px;
+}
+
+/* line 38, ../sass/icons.scss */
+.pin:hover {
+  background: url("../img/iconsheet.png") no-repeat -53px -209px;
+}
+
+/* line 41, ../sass/icons.scss */
+.activity {
+  background: url("../img/iconsheet.png") no-repeat -111px -24px;
+  width: 17px;
+  height: 18px;
+}
+
+/* line 46, ../sass/icons.scss */
+.play {
+  background: url("../img/iconsheet.png") no-repeat -112px -63px;
+  width: 19px;
+  height: 21px;
+}
+
+/* line 51, ../sass/icons.scss */
+.pause {
+  background: url("../img/iconsheet.png") no-repeat -114px -103px;
+  width: 16px;
+  height: 22px;
+}
+
+/* line 56, ../sass/icons.scss */
+.corner_right {
+  background: url("../img/iconsheet.png") no-repeat -100px -138px;
+  width: 38px;
+  height: 37px;
+}
+
+/* line 61, ../sass/icons.scss */
+.corner_left {
+  background: url("../img/iconsheet.png") no-repeat -102px -190px;
+  width: 38px;
+  height: 38px;
+}
+
+/* line 23, ../sass/screen.sass */
 body {
-  background: url("/img/bg.jpg") repeat top center;
-  background-size: auto 105%;
+  background: url("/img/bg.jpg") repeat bottom center;
+  background-size: auto 125%;
   background-attachment: fixed;
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  /* line 27, ../sass/screen.sass */
+  /* line 28, ../sass/screen.sass */
   body {
     background-size: 180% auto;
     background-position-x: right;
   }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-  /* line 31, ../sass/screen.sass */
+  /* line 32, ../sass/screen.sass */
   body {
     background-size: 110% auto;
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) and (orientation: portrait) {
-  /* line 34, ../sass/screen.sass */
+  /* line 35, ../sass/screen.sass */
   body {
     background-size: auto 100%;
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) and (orientation: portrait) {
-  /* line 37, ../sass/screen.sass */
+  /* line 38, ../sass/screen.sass */
   body {
     background-size: 200% auto;
     background-position-x: right;
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) and (orientation: landscape) {
-  /* line 41, ../sass/screen.sass */
+  /* line 42, ../sass/screen.sass */
   body {
     background-size: 110% auto;
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) and (orientation: portrait) {
-  /* line 44, ../sass/screen.sass */
+  /* line 45, ../sass/screen.sass */
   body {
     background-size: 200% auto;
     background-position-x: right;
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) and (orientation: landscape) {
-  /* line 48, ../sass/screen.sass */
+  /* line 49, ../sass/screen.sass */
   body {
     background-size: 110% auto;
   }
 }
 @media screen and (min-width: 1500px) {
-  /* line 51, ../sass/screen.sass */
+  /* line 52, ../sass/screen.sass */
   body {
     background: red;
     background-size: auto 125%;
   }
 }
-/* line 55, ../sass/screen.sass */
+/* line 56, ../sass/screen.sass */
 .masthead {
   background-color: #242424;
   position: fixed;
@@ -135,7 +230,7 @@ body {
   z-index: 100;
 }
 
-/* line 62, ../sass/screen.sass */
+/* line 63, ../sass/screen.sass */
 .footer {
   height: 90px;
   background-color: #1e1e1e;
@@ -147,14 +242,87 @@ body {
   z-index: 100;
 }
 
-/* line 72, ../sass/screen.sass */
-.jenna {
-  max-height: 100%;
+/* line 73, ../sass/screen.sass */
+.content {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 80px;
+  right: 10%;
+  max-width: 70%;
+  max-height: 90%;
+}
+/* line 80, ../sass/screen.sass */
+.content .jenna {
+  height: auto;
   width: auto;
+  max-height: 100%;
+  max-width: 100%;
 }
 
-/* line 76, ../sass/screen.sass */
+/* line 86, ../sass/screen.sass */
+.logo {
+  width: 430px;
+  height: auto;
+  position: absolute;
+  left: 10%;
+  top: 20%;
+}
+/* line 92, ../sass/screen.sass */
+.logo img {
+  height: auto;
+  width: auto;
+  max-width: 100%;
+}
+
+/* line 97, ../sass/screen.sass */
+.social {
+  width: 50px;
+  margin-top: 10%;
+  right: 5%;
+  top: 5%;
+  position: absolute;
+}
+/* line 103, ../sass/screen.sass */
+.social a {
+  display: inline-block;
+}
+
+/* line 106, ../sass/screen.sass */
+.note {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 50px;
+  text-shadow: inset 0 0 50px black;
+}
+/* line 111, ../sass/screen.sass */
+.note img {
+  width: 400px;
+}
+
+/* line 114, ../sass/screen.sass */
+.ribbon {
+  width: 320px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  text-align: center;
+}
+/* line 120, ../sass/screen.sass */
+.ribbon .now {
+  height: 30px;
+  background: #2c3232;
+  color: #b7e0d8;
+}
+/* line 124, ../sass/screen.sass */
+.ribbon .song {
+  height: 70px;
+  background-color: #b7e0d8;
+  clolor: #2c3232;
+}
+
+/* line 132, ../sass/screen.sass */
 .container {
   padding-left: 20px;
   padding-right: 20px;
+  text-align: center;
 }
