@@ -23,7 +23,7 @@ $column-killer-breakpoint: $phone-landscape  // 640px
 // Scale the background to the device
 body
     background: url('/img/bg.jpg') repeat bottom center
-    background-size: auto 125%
+    background-size: auto 150%
     background-attachment: fixed
 @include ipad-portrait
     body
@@ -90,6 +90,7 @@ body
     position: absolute
     left: 10%
     top: 10%
+    z-index: 90
     img
         height: auto
         width: auto
@@ -98,8 +99,8 @@ body
 .social
     width: 50px
     margin-top: 10%
-    right: 5%
-    top: 5%
+    right: 0%
+    top: 0%
     position: absolute
     a
         display: inline-block
@@ -146,3 +147,68 @@ body
     @include container
     text-align: center
     // background: blue
+
+.player
+    position: absolute
+    background: #000
+    height: 43px
+    width: 320px
+    overflow: hidden
+    margin-left: 120px
+    margin-top: 25px
+    .control
+        width: 50px
+        height: 40px
+        text-align: center
+        background: rgba(6,6,6,1)
+        float: left
+        display: inline-block
+        .play, .pause
+            margin: auto
+            top: 10px
+            position: relative
+    .title
+        background: rgba(43,50,49,1)
+        width: 240px
+        height: 40px
+        float: left
+        display: inline-block
+        text-align: center
+        span
+            color: rgba(182,194,192,1)
+            font-family: $novecento
+            font-size: 12px
+            letter-spacing: 4px
+            line-height: 40px
+    .activity
+        width: 30px
+        height: 40px
+        float: left
+        display: inline-block
+        background: rgba(43,50,49,1)
+        .activity-icon
+            margin-top: 10px
+    .track
+        display: inline-block
+        float: left
+    .progress
+        width: 130px
+        height: 3px
+        background-color: rgba(73,88,85,1)
+        border-top-right-radius: 5px
+        border-bottom-right-radius: 5px
+
+.nav
+    position: relative
+    text-align: right
+    line-height: 90px
+    margin-right: 70px
+    a
+        font-family: $novecento
+        font-size: 13px
+        letter-spacing: 3px
+        color: $bluet
+        text-decoration: none
+        margin-left: 20px
+        &:hover
+            color: rgba(110,120,112,1)

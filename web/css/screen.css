@@ -128,7 +128,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 41, ../sass/icons.scss */
-.activity {
+.activity-icon {
   background: url("../img/iconsheet.png") no-repeat -111px -24px;
   width: 17px;
   height: 18px;
@@ -165,7 +165,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* line 24, ../sass/screen.sass */
 body {
   background: url("/img/bg.jpg") repeat bottom center;
-  background-size: auto 125%;
+  background-size: auto 150%;
   background-attachment: fixed;
 }
 
@@ -266,41 +266,42 @@ body {
   position: absolute;
   left: 10%;
   top: 10%;
+  z-index: 90;
 }
-/* line 93, ../sass/screen.sass */
+/* line 94, ../sass/screen.sass */
 .logo img {
   height: auto;
   width: auto;
   max-width: 100%;
 }
 
-/* line 98, ../sass/screen.sass */
+/* line 99, ../sass/screen.sass */
 .social {
   width: 50px;
   margin-top: 10%;
-  right: 5%;
-  top: 5%;
+  right: 0%;
+  top: 0%;
   position: absolute;
 }
-/* line 104, ../sass/screen.sass */
+/* line 105, ../sass/screen.sass */
 .social a {
   display: inline-block;
   margin-bottom: 8px;
 }
 
-/* line 108, ../sass/screen.sass */
+/* line 109, ../sass/screen.sass */
 .note {
   position: absolute;
   bottom: 0;
   margin-bottom: 50px;
   text-shadow: inset 0 0 50px black;
 }
-/* line 113, ../sass/screen.sass */
+/* line 114, ../sass/screen.sass */
 .note img {
   width: 400px;
 }
 
-/* line 116, ../sass/screen.sass */
+/* line 117, ../sass/screen.sass */
 .ribbon {
   width: 320px;
   position: absolute;
@@ -309,7 +310,7 @@ body {
   margin-bottom: 300px;
   text-align: right;
 }
-/* line 123, ../sass/screen.sass */
+/* line 124, ../sass/screen.sass */
 .ribbon .now {
   padding-right: 20px;
   height: 30px;
@@ -320,7 +321,7 @@ body {
   letter-spacing: 3px;
   font-size: 13px;
 }
-/* line 132, ../sass/screen.sass */
+/* line 133, ../sass/screen.sass */
 .ribbon .song {
   height: 70px;
   line-height: 70px;
@@ -333,9 +334,98 @@ body {
   letter-spacing: 3px;
 }
 
-/* line 145, ../sass/screen.sass */
+/* line 146, ../sass/screen.sass */
 .container {
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
+}
+
+/* line 151, ../sass/screen.sass */
+.player {
+  position: absolute;
+  background: black;
+  height: 43px;
+  width: 320px;
+  overflow: hidden;
+  margin-left: 120px;
+  margin-top: 25px;
+}
+/* line 159, ../sass/screen.sass */
+.player .control {
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  background: #060606;
+  float: left;
+  display: inline-block;
+}
+/* line 166, ../sass/screen.sass */
+.player .control .play, .player .control .pause {
+  margin: auto;
+  top: 10px;
+  position: relative;
+}
+/* line 170, ../sass/screen.sass */
+.player .title {
+  background: #2b3231;
+  width: 240px;
+  height: 40px;
+  float: left;
+  display: inline-block;
+  text-align: center;
+}
+/* line 177, ../sass/screen.sass */
+.player .title span {
+  color: #b6c2c0;
+  font-family: NovecentowideLightBold, "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 4px;
+  line-height: 40px;
+}
+/* line 183, ../sass/screen.sass */
+.player .activity {
+  width: 30px;
+  height: 40px;
+  float: left;
+  display: inline-block;
+  background: #2b3231;
+}
+/* line 189, ../sass/screen.sass */
+.player .activity .activity-icon {
+  margin-top: 10px;
+}
+/* line 191, ../sass/screen.sass */
+.player .track {
+  display: inline-block;
+  float: left;
+}
+/* line 194, ../sass/screen.sass */
+.player .progress {
+  width: 130px;
+  height: 3px;
+  background-color: #495855;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/* line 201, ../sass/screen.sass */
+.nav {
+  position: relative;
+  text-align: right;
+  line-height: 90px;
+  margin-right: 70px;
+}
+/* line 206, ../sass/screen.sass */
+.nav a {
+  font-family: NovecentowideLightBold, "Helvetica Neue", Arial, sans-serif;
+  font-size: 13px;
+  letter-spacing: 3px;
+  color: #b6c2c0;
+  text-decoration: none;
+  margin-left: 20px;
+}
+/* line 213, ../sass/screen.sass */
+.nav a:hover {
+  color: #6e7870;
 }
