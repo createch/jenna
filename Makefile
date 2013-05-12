@@ -1,6 +1,8 @@
-start: stop
-	cd web && nohup python -m SimpleHTTPServer &
+start: stop serve
 	compass watch web
+
+serve:
+	cd web && nohup python -m SimpleHTTPServer &
 
 stop:
 	python stop.py
