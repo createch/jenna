@@ -24,7 +24,6 @@
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
-
         <div class="masthead"></div>
         <div class="container">
             <div class="content">
@@ -35,7 +34,7 @@
                     <a class="in" href="#"></a>
                     <a class="pin" href="#"></a>
                 </div>
-                <img  class="jenna" src="img/jenna.png" />
+                <div class="jenna"><img src="img/jenna.png" /></div>
             </div>
             <div class="logo">
                 <img src="img/logo.png">
@@ -48,11 +47,16 @@
         </div>
         <div class="footer">
             <div class="player">
+                <ul class="playlist">
+                    <li data-url="/media/drum1.mp3" data-title="Drums"></li>
+                    <!-- <li data-url="/media/pink.mp3" data-title="Pink Noise"></li> -->
+                    <!-- <li data-title="/media/sinus.mp3" data-url="Sinus"></li> -->
+                </ul>
                 <div class="control">
                     <div class="pause"></div>
                 </div>
                 <div class="title">
-                    <span>Playing: Dandelion</span>
+                    <span>Playing: <span class="title-text"></span></span>
                 </div>
                 <div class="activity">
                     <div class="activity-icon"></div>
@@ -67,11 +71,10 @@
                 <a href="#">Booking</a>
             </div>
         </div>
-
-
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
+        <script src="js/vendor/mediaelement.min.js"></script>
         <script src="js/main.js"></script>
         <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];

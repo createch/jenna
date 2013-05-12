@@ -20,6 +20,16 @@ $phone-portrait:        20.00em  // 320px
 
 $column-killer-breakpoint: $phone-landscape  // 640px
 
+html, body
+    height: 100%
+.content img
+    max-height: 100%
+    width: auto\9
+    max-width: auto 
+    vertical-align: middle
+    border: 0
+    -ms-interpolation-mode: bicubic
+
 // Scale the background to the device
 body
     background: url('/img/bg.jpg') repeat bottom center
@@ -79,17 +89,20 @@ body
     max-width: 70%
     max-height: 90%
     .jenna
-        height: auto
-        width: auto
         max-height: 100%
         max-width: 100%
+        img
+            max-height: 100%
+            max-width: 100%
+            height: 100%
+            width: auto
 
 .logo
     width: 430px
     height: auto
     position: absolute
-    left: 10%
-    top: 10%
+    left: 120px
+    bottom: 430px
     z-index: 90
     img
         height: auto
@@ -109,10 +122,10 @@ body
 .note
     position: absolute 
     bottom: 0
-    margin-bottom: 50px
+    margin-bottom: 20px
     text-shadow: inset 0 0 50px #000
     img
-        width: 400px
+        width: 460px
 
 .ribbon
     width: 320px
@@ -156,6 +169,13 @@ body
     overflow: hidden
     margin-left: 120px
     margin-top: 25px
+    z-index: 120
+    -webkit-touch-callout: none
+    -webkit-user-select: none
+    -khtml-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
     .control
         width: 50px
         height: 40px
@@ -163,10 +183,13 @@ body
         background: rgba(6,6,6,1)
         float: left
         display: inline-block
+        cursor: pointer
         .play, .pause
             margin: auto
             top: 10px
             position: relative
+        &:hover
+            background-color: rgba(50,72,69,1)
     .title
         background: rgba(43,50,49,1)
         width: 240px
@@ -192,7 +215,7 @@ body
         display: inline-block
         float: left
     .progress
-        width: 130px
+        width: 1px
         height: 3px
         background-color: rgba(73,88,85,1)
         border-top-right-radius: 5px
@@ -203,6 +226,7 @@ body
     text-align: right
     line-height: 90px
     margin-right: 70px
+    z-index: 110
     a
         font-family: $novecento
         font-size: 13px
@@ -212,3 +236,6 @@ body
         margin-left: 20px
         &:hover
             color: rgba(110,120,112,1)
+
+.playlist
+    display: none
