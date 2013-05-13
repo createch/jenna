@@ -1,7 +1,7 @@
 /*
     Misc
  */
-(function($) {
+;(function($) {
 
     window.onload = function() {
 
@@ -30,6 +30,13 @@
                     top: "0"
                 })
             }
+
+            $(".rtop, .ltop").css({
+                width: ww - 100 + "px"
+            })
+            $(".rline, .lline").css({
+                height: wh + "px"
+            })
 
             console.log( wh + " " + ww + " -> " + $img.height() + " " + $img.width())
         }
@@ -81,7 +88,8 @@
         $ribbon.animate({
             left: (-1 * $ribbon.width()) + "px"
         }, 800, function() {
-            callback()
+            if (typeof callback !== "undefined")
+                callback()
         })
         $control.children().removeClass("pause").addClass("play");
         player.pause()
@@ -107,7 +115,7 @@
                 player = mediaelement
                 at = 0
                 total = player.duration
-                play()
+                pause()
                 updateTrack = setInterval(update, 250)
             }
         })
@@ -116,7 +124,7 @@
 
     function nextSong() {
 
-        if (playlistPos >= playlist.length)
+        if (playlistPos >= playlist.length - 1)
             playlistPos = 0
         else
             playlistPos++

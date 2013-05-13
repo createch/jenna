@@ -315,18 +315,19 @@ body {
 }
 /* line 122, ../sass/screen.sass */
 .content .jenna {
+  right: 50px;
   max-height: 100%;
   max-width: 100%;
   position: relative;
 }
-/* line 126, ../sass/screen.sass */
+/* line 127, ../sass/screen.sass */
 .content .jenna img {
   position: relative;
   height: auto;
   width: auto;
 }
 
-/* line 131, ../sass/screen.sass */
+/* line 132, ../sass/screen.sass */
 .logo {
   width: 430px;
   height: auto;
@@ -336,14 +337,14 @@ body {
   max-width: 40%;
   z-index: 90;
 }
-/* line 139, ../sass/screen.sass */
+/* line 140, ../sass/screen.sass */
 .logo img {
   height: auto;
   width: auto;
   max-width: 100%;
 }
 
-/* line 144, ../sass/screen.sass */
+/* line 145, ../sass/screen.sass */
 .social {
   width: 50px;
   margin-top: 10%;
@@ -351,25 +352,25 @@ body {
   top: 0%;
   position: absolute;
 }
-/* line 150, ../sass/screen.sass */
+/* line 151, ../sass/screen.sass */
 .social a {
   display: inline-block;
   margin-bottom: 8px;
 }
 
-/* line 154, ../sass/screen.sass */
+/* line 155, ../sass/screen.sass */
 .note {
   position: absolute;
   bottom: 0;
   margin-bottom: 20px;
   text-shadow: inset 0 0 50px black;
 }
-/* line 159, ../sass/screen.sass */
+/* line 160, ../sass/screen.sass */
 .note img {
   width: 460px;
 }
 
-/* line 162, ../sass/screen.sass */
+/* line 163, ../sass/screen.sass */
 .ribbon {
   width: 320px;
   position: absolute;
@@ -379,7 +380,7 @@ body {
   text-align: right;
   overflow: hidden;
 }
-/* line 170, ../sass/screen.sass */
+/* line 171, ../sass/screen.sass */
 .ribbon .now {
   padding-right: 20px;
   height: 30px;
@@ -390,7 +391,7 @@ body {
   letter-spacing: 3px;
   font-size: 13px;
 }
-/* line 179, ../sass/screen.sass */
+/* line 180, ../sass/screen.sass */
 .ribbon .song {
   height: 70px;
   line-height: 70px;
@@ -404,14 +405,14 @@ body {
   text-overflow: ellipsis;
 }
 
-/* line 193, ../sass/screen.sass */
+/* line 194, ../sass/screen.sass */
 .container {
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
 }
 
-/* line 198, ../sass/screen.sass */
+/* line 199, ../sass/screen.sass */
 .player {
   position: absolute;
   background: black;
@@ -428,7 +429,7 @@ body {
   -ms-user-select: none;
   user-select: none;
 }
-/* line 213, ../sass/screen.sass */
+/* line 214, ../sass/screen.sass */
 .player .control {
   width: 50px;
   height: 40px;
@@ -438,17 +439,17 @@ body {
   display: inline-block;
   cursor: pointer;
 }
-/* line 221, ../sass/screen.sass */
+/* line 222, ../sass/screen.sass */
 .player .control .play, .player .control .pause {
   margin: auto;
   top: 10px;
   position: relative;
 }
-/* line 225, ../sass/screen.sass */
+/* line 226, ../sass/screen.sass */
 .player .control:hover {
   background-color: #324845;
 }
-/* line 227, ../sass/screen.sass */
+/* line 228, ../sass/screen.sass */
 .player .title {
   background: #2b3231;
   width: 240px;
@@ -457,7 +458,7 @@ body {
   display: inline-block;
   text-align: center;
 }
-/* line 234, ../sass/screen.sass */
+/* line 235, ../sass/screen.sass */
 .player .title span {
   color: #b6c2c0;
   font-family: NovecentowideLightBold, "Helvetica Neue", Arial, sans-serif;
@@ -465,7 +466,7 @@ body {
   letter-spacing: 4px;
   line-height: 40px;
 }
-/* line 240, ../sass/screen.sass */
+/* line 241, ../sass/screen.sass */
 .player .activity {
   width: 30px;
   height: 40px;
@@ -473,16 +474,16 @@ body {
   display: inline-block;
   background: #2b3231;
 }
-/* line 246, ../sass/screen.sass */
+/* line 247, ../sass/screen.sass */
 .player .activity .activity-icon {
   margin-top: 10px;
 }
-/* line 248, ../sass/screen.sass */
+/* line 249, ../sass/screen.sass */
 .player .track {
   display: inline-block;
   float: left;
 }
-/* line 251, ../sass/screen.sass */
+/* line 252, ../sass/screen.sass */
 .player .progress {
   width: 1px;
   height: 3px;
@@ -491,7 +492,7 @@ body {
   border-bottom-right-radius: 5px;
 }
 
-/* line 258, ../sass/screen.sass */
+/* line 259, ../sass/screen.sass */
 .nav {
   position: relative;
   text-align: right;
@@ -499,7 +500,7 @@ body {
   margin-right: 70px;
   z-index: 110;
 }
-/* line 264, ../sass/screen.sass */
+/* line 265, ../sass/screen.sass */
 .nav a {
   font-family: NovecentowideLightBold, "Helvetica Neue", Arial, sans-serif;
   font-size: 13px;
@@ -508,12 +509,12 @@ body {
   text-decoration: none;
   margin-left: 20px;
 }
-/* line 271, ../sass/screen.sass */
+/* line 272, ../sass/screen.sass */
 .nav a:hover {
   color: #6e7870;
 }
 
-/* line 274, ../sass/screen.sass */
+/* line 275, ../sass/screen.sass */
 .playlist {
   display: none;
 }
