@@ -3,13 +3,41 @@
  */
 (function($) {
 
-    resize() {
-        // firefox fix
-        $(".jenna").height($(window).height() + "px")
-    }
+    window.onload = function() {
 
-    resize()
-    $(window).resize(resize())
+        var $img = $(".jenna img")
+
+        ratio = 0.916496945
+
+
+        function resize() {
+            console.log(ratio + " r " + ratio)
+
+            var wh = $(window).height()
+            var ww = $(window).width()
+            
+            if (wh > ww) { // portrait
+                $img.css({
+                    height: ww + "px",
+                    width: (ww*ratio) + "px",
+                    top: (wh - ww) + "px"
+                })
+            }
+            else { // landscape or square
+                $img.css({
+                    height: wh + "px",
+                    width: wh * ratio + "px",
+                    top: "0"
+                })
+            }
+
+            console.log( wh + " " + ww + " -> " + $img.height() + " " + $img.width())
+        }
+
+        resize()
+        $(window).resize(resize)
+
+    }
 
 }(jQuery));
 /*
@@ -20,7 +48,7 @@
     var playlist, playlistPos // songs, acquired from DOM
     var $audio, audio // audio player
     var player, at, total, updateTrack // audio player + progress
-    var $progress, playerWidth, $control // UI stuff
+    var $progress, playerWidth, $control, $ribbon // UI stuff
 
     function draw(ratio) {
         var w = playerWidth * ratio
@@ -40,17 +68,26 @@
     }
 
     function play() {
+        $ribbon.animate({
+            left: 0 + "px"
+        }, 800)
         $control.children().removeClass("play").addClass("pause");
         player.play()
     }
 
     function pause() {
+        var callback = arguments[0]
+
+        $ribbon.animate({
+            left: (-1 * $ribbon.width()) + "px"
+        }, 800, function() {
+            callback()
+        })
         $control.children().removeClass("pause").addClass("play");
         player.pause()
     }
 
     function togglePause() {
-        console.log("toggle")
         if (player.paused)
             play()
         else
@@ -78,20 +115,27 @@
     }
 
     function nextSong() {
-        // stop the playing song if we have started one
-        if (typeof $audio !== "undefined") {
-            player.pause()
-            $audio.remove()
-            playlistPos++
-        }
 
-        if (playlistPos == playlist.length)
+        if (playlistPos >= playlist.length)
+            playlistPos = 0
+        else
             playlistPos++
 
         var song = playlist[playlistPos]
 
-        $(".title-text").text(song.title)
-        $(".song").text(song.title)
+        // stop the playing song if we have started one
+        if (typeof $audio !== "undefined") {
+            pause(function() {
+                $(".title-text").text(song.title)
+                $(".song").text(song.title)
+            })
+            $audio.remove()
+            playlistPos++
+        }
+        else {
+            $(".title-text").text(song.title)
+            $(".song").text(song.title)
+        }
 
         console.log(song)
 
@@ -102,8 +146,9 @@
         console.log("Did init")
         $progress = $(".progress")
         $control = $(".control")
+        $ribbon = $(".ribbon")
         playerWidth = $(".player").width()
-        playlistPos = 0 
+        playlistPos = -1
         playlist = []
 
         $control.on("click", togglePause)

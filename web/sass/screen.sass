@@ -22,6 +22,7 @@ $column-killer-breakpoint: $phone-landscape  // 640px
 
 html, body
     height: 100%
+    overflow: hidden
 .content img
     max-height: 100%
     width: auto\9
@@ -81,20 +82,50 @@ body
     display: block
     z-index: 100
 
+.corner
+    top: 20px
+    margin-left: 10px
+    margin-right: 10px
+    position: absolute
+    .line
+        background-color: rgba(230,251,248,1)
+        width: 2px
+        height: 2px
+        position: absolute
+        &.rline
+            height: 1000px
+            margin-left: 27px
+        &.lline
+            height: 1000px
+            margin-left: 9px
+            margin-top: -2px
+        &.rtop
+            margin-top: 11px 
+            left: 36px
+            width: 1000px
+        &.ltop
+            right: 36px
+            margin-top: 11px 
+            width: 1000px
+    &.rcorner
+        right: 0
+    &.lcorner
+        left: 0
+
 .content
     position: absolute
-    bottom: 0
+    top: 0
     margin-bottom: 80px
-    right: 10%
+    right: 5%
     max-width: 70%
-    max-height: 90%
+    max-height: 100%
     .jenna
         max-height: 100%
         max-width: 100%
+        position: relative
         img
-            max-height: 100%
-            max-width: 100%
-            height: 100%
+            position: relative
+            height: auto
             width: auto
 
 .logo
@@ -102,7 +133,8 @@ body
     height: auto
     position: absolute
     left: 120px
-    bottom: 430px
+    top: 10%
+    max-width: 40%
     z-index: 90
     img
         height: auto
@@ -130,10 +162,11 @@ body
 .ribbon
     width: 320px
     position: absolute
-    left: 0
+    left: -320px
     bottom: 0
     margin-bottom: 300px
     text-align: right
+    overflow: hidden
     .now
         padding-right: 20px
         height: 30px
@@ -150,9 +183,10 @@ body
         color: $greyr
         font-family: $gothic
         text-transform: uppercase
-        font-size: 50px
+        font-size: 45px
         padding-right: 20px
-        letter-spacing: 3px
+        letter-spacing: 2px
+        text-overflow: ellipsis
 
 
 
