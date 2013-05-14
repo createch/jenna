@@ -9,6 +9,7 @@
 @import "variables"
 @import "icons"
 @import "webfonts"
+@import "compass/css3"
 
 // Reasonable Breakpoint Values
 $desktop-wide:          71.25em  // 1140px
@@ -20,9 +21,16 @@ $phone-portrait:        20.00em  // 320px
 
 $column-killer-breakpoint: $phone-landscape  // 640px
 
+a
+    +transition(all 0.3s ease-in-out)
+
 html, body
     height: 100%
     overflow: hidden
+    ::-moz-selection
+        background: rgba(105,193,207,0.5)
+    ::selection
+        background: rgba(105,193,207,0.5)
 .content img
     max-height: 100%
     width: auto\9
@@ -62,8 +70,8 @@ body
         background-size: 110% auto
 @include min-screen(1500px) // not sure if this is working
     body
-        background: red
-        background-size: auto 125%
+        background-size: 100% auto
+        background-position: center center
 
 .masthead
     background-color: $greyh
@@ -94,18 +102,19 @@ body
         position: absolute
         &.rline
             height: 1000px
-            margin-left: 27px
+            margin-left: 20px
+            margin-top: -18px
         &.lline
             height: 1000px
-            margin-left: 9px
-            margin-top: -2px
+            margin-left: 7px
+            margin-top: -18px
         &.rtop
-            margin-top: 11px 
-            left: 36px
+            margin-top: 8px 
+            left: 20px
             width: 1000px
         &.ltop
-            right: 36px
-            margin-top: 11px 
+            right: 30px
+            margin-top: 8px 
             width: 1000px
     &.rcorner
         right: 0
@@ -163,7 +172,7 @@ body
 .ribbon
     width: 320px
     position: absolute
-    left: -320px
+    left: 0
     bottom: 0
     margin-bottom: 300px
     text-align: right
@@ -218,6 +227,7 @@ body
         background: rgba(6,6,6,1)
         float: left
         display: inline-block
+        +transition(all 0.3s ease-in-out)
         cursor: pointer
         .play, .pause
             margin: auto

@@ -55,7 +55,7 @@
     var playlist, playlistPos // songs, acquired from DOM
     var $audio, audio // audio player
     var player, at, total, updateTrack // audio player + progress
-    var $progress, playerWidth, $control, $ribbon // UI stuff
+    var $progress, playerWidth, $control, $ribbon, $song // UI stuff
 
     function draw(ratio) {
         var w = playerWidth * ratio
@@ -75,23 +75,12 @@
     }
 
     function play() {
-        $ribbon.animate({
-            left: 0 + "px"
-        }, 800)
-        $control.children().removeClass("play").addClass("pause");
+        $control.children().removeClass("play").addClass("pause")
         player.play()
     }
 
     function pause() {
-        var callback = arguments[0]
-
-        $ribbon.animate({
-            left: (-1 * $ribbon.width()) + "px"
-        }, 800, function() {
-            if (typeof callback !== "undefined")
-                callback()
-        })
-        $control.children().removeClass("pause").addClass("play");
+        $song.children().removeClass("pause").addClass("play")
         player.pause()
     }
 
@@ -115,7 +104,7 @@
                 player = mediaelement
                 at = 0
                 total = player.duration
-                pause()
+                play()
                 updateTrack = setInterval(update, 250)
             }
         })
@@ -140,12 +129,14 @@
             $audio.remove()
             playlistPos++
         }
+
         else {
             $(".title-text").text(song.title)
-            $(".song").text(song.title)
+            $song.fadeOut(800, function() {
+                $song.text(song.title)
+                $song.fadeIn(800)
+            })
         }
-
-        console.log(song)
 
         playSong(song.url)
     }
@@ -155,6 +146,7 @@
         $progress = $(".progress")
         $control = $(".control")
         $ribbon = $(".ribbon")
+        $song = $ribbon.find(".song span")
         playerWidth = $(".player").width()
         playlistPos = -1
         playlist = []

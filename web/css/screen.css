@@ -150,25 +150,41 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 56, ../sass/icons.scss */
 .corner_right {
-  background: url("../img/iconsheet.png") no-repeat -100px -138px;
-  width: 38px;
-  height: 37px;
+  background: url("../img/frame_right_corner.png") no-repeat;
+  width: 40px;
+  height: 40px;
 }
 
 /* line 61, ../sass/icons.scss */
 .corner_left {
-  background: url("../img/iconsheet.png") no-repeat -102px -190px;
-  width: 38px;
-  height: 38px;
+  background: url("../img/frame_left_corner.png") no-repeat;
+  width: 40px;
+  height: 40px;
 }
 
-/* line 23, ../sass/screen.sass */
+/* line 24, ../sass/screen.sass */
+a {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* line 27, ../sass/screen.sass */
 html, body {
   height: 100%;
   overflow: hidden;
 }
+/* line 30, ../sass/screen.sass */
+html ::-moz-selection, body ::-moz-selection {
+  background: rgba(105, 193, 207, 0.5);
+}
+/* line 32, ../sass/screen.sass */
+html ::selection, body ::selection {
+  background: rgba(105, 193, 207, 0.5);
+}
 
-/* line 26, ../sass/screen.sass */
+/* line 34, ../sass/screen.sass */
 .content img {
   max-height: 100%;
   width: auto\9;
@@ -178,7 +194,7 @@ html, body {
   -ms-interpolation-mode: bicubic;
 }
 
-/* line 35, ../sass/screen.sass */
+/* line 43, ../sass/screen.sass */
 body {
   background: url("/img/bg.jpg") repeat bottom center;
   background-size: auto 150%;
@@ -186,58 +202,58 @@ body {
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  /* line 40, ../sass/screen.sass */
+  /* line 48, ../sass/screen.sass */
   body {
     background-size: 180% auto;
     background-position-x: right;
   }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-  /* line 44, ../sass/screen.sass */
+  /* line 52, ../sass/screen.sass */
   body {
     background-size: 110% auto;
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) and (orientation: portrait) {
-  /* line 47, ../sass/screen.sass */
+  /* line 55, ../sass/screen.sass */
   body {
     background-size: auto 100%;
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) and (orientation: portrait) {
-  /* line 50, ../sass/screen.sass */
+  /* line 58, ../sass/screen.sass */
   body {
     background-size: 200% auto;
     background-position-x: right;
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) and (orientation: landscape) {
-  /* line 54, ../sass/screen.sass */
+  /* line 62, ../sass/screen.sass */
   body {
     background-size: 110% auto;
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) and (orientation: portrait) {
-  /* line 57, ../sass/screen.sass */
+  /* line 65, ../sass/screen.sass */
   body {
     background-size: 200% auto;
     background-position-x: right;
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) and (orientation: landscape) {
-  /* line 61, ../sass/screen.sass */
+  /* line 69, ../sass/screen.sass */
   body {
     background-size: 110% auto;
   }
 }
 @media screen and (min-width: 1500px) {
-  /* line 64, ../sass/screen.sass */
+  /* line 72, ../sass/screen.sass */
   body {
-    background: red;
-    background-size: auto 125%;
+    background-size: 100% auto;
+    background-position: center center;
   }
 }
-/* line 68, ../sass/screen.sass */
+/* line 76, ../sass/screen.sass */
 .masthead {
   background-color: #242424;
   position: fixed;
@@ -246,7 +262,7 @@ body {
   z-index: 100;
 }
 
-/* line 75, ../sass/screen.sass */
+/* line 83, ../sass/screen.sass */
 .footer {
   height: 90px;
   background-color: #1e1e1e;
@@ -258,53 +274,54 @@ body {
   z-index: 100;
 }
 
-/* line 85, ../sass/screen.sass */
+/* line 93, ../sass/screen.sass */
 .corner {
   top: 20px;
   margin-left: 10px;
   margin-right: 10px;
   position: absolute;
 }
-/* line 90, ../sass/screen.sass */
+/* line 98, ../sass/screen.sass */
 .corner .line {
   background-color: #e6fbf8;
   width: 2px;
   height: 2px;
   position: absolute;
 }
-/* line 95, ../sass/screen.sass */
+/* line 103, ../sass/screen.sass */
 .corner .line.rline {
   height: 1000px;
-  margin-left: 27px;
+  margin-left: 20px;
+  margin-top: -18px;
 }
-/* line 98, ../sass/screen.sass */
+/* line 107, ../sass/screen.sass */
 .corner .line.lline {
   height: 1000px;
-  margin-left: 9px;
-  margin-top: -2px;
+  margin-left: 7px;
+  margin-top: -18px;
 }
-/* line 102, ../sass/screen.sass */
+/* line 111, ../sass/screen.sass */
 .corner .line.rtop {
-  margin-top: 11px;
-  left: 36px;
+  margin-top: 8px;
+  left: 20px;
   width: 1000px;
 }
-/* line 106, ../sass/screen.sass */
+/* line 115, ../sass/screen.sass */
 .corner .line.ltop {
-  right: 36px;
-  margin-top: 11px;
+  right: 30px;
+  margin-top: 8px;
   width: 1000px;
 }
-/* line 110, ../sass/screen.sass */
+/* line 119, ../sass/screen.sass */
 .corner.rcorner {
   right: 0;
 }
-/* line 112, ../sass/screen.sass */
+/* line 121, ../sass/screen.sass */
 .corner.lcorner {
   left: 0;
 }
 
-/* line 115, ../sass/screen.sass */
+/* line 124, ../sass/screen.sass */
 .content {
   position: absolute;
   top: 0;
@@ -313,21 +330,21 @@ body {
   max-width: 70%;
   max-height: 100%;
 }
-/* line 122, ../sass/screen.sass */
+/* line 131, ../sass/screen.sass */
 .content .jenna {
   right: 50px;
   max-height: 100%;
   max-width: 100%;
   position: relative;
 }
-/* line 127, ../sass/screen.sass */
+/* line 136, ../sass/screen.sass */
 .content .jenna img {
   position: relative;
   height: auto;
   width: auto;
 }
 
-/* line 132, ../sass/screen.sass */
+/* line 141, ../sass/screen.sass */
 .logo {
   width: 430px;
   height: auto;
@@ -337,14 +354,14 @@ body {
   max-width: 40%;
   z-index: 90;
 }
-/* line 140, ../sass/screen.sass */
+/* line 149, ../sass/screen.sass */
 .logo img {
   height: auto;
   width: auto;
   max-width: 100%;
 }
 
-/* line 145, ../sass/screen.sass */
+/* line 154, ../sass/screen.sass */
 .social {
   width: 50px;
   margin-top: 10%;
@@ -352,35 +369,35 @@ body {
   top: 0%;
   position: absolute;
 }
-/* line 151, ../sass/screen.sass */
+/* line 160, ../sass/screen.sass */
 .social a {
   display: inline-block;
   margin-bottom: 8px;
 }
 
-/* line 155, ../sass/screen.sass */
+/* line 164, ../sass/screen.sass */
 .note {
   position: absolute;
   bottom: 0;
   margin-bottom: 20px;
   text-shadow: inset 0 0 50px black;
 }
-/* line 160, ../sass/screen.sass */
+/* line 169, ../sass/screen.sass */
 .note img {
   width: 460px;
 }
 
-/* line 163, ../sass/screen.sass */
+/* line 172, ../sass/screen.sass */
 .ribbon {
   width: 320px;
   position: absolute;
-  left: -320px;
+  left: 0;
   bottom: 0;
   margin-bottom: 300px;
   text-align: right;
   overflow: hidden;
 }
-/* line 171, ../sass/screen.sass */
+/* line 180, ../sass/screen.sass */
 .ribbon .now {
   padding-right: 20px;
   height: 30px;
@@ -391,7 +408,7 @@ body {
   letter-spacing: 3px;
   font-size: 13px;
 }
-/* line 180, ../sass/screen.sass */
+/* line 189, ../sass/screen.sass */
 .ribbon .song {
   height: 70px;
   line-height: 70px;
@@ -405,14 +422,14 @@ body {
   text-overflow: ellipsis;
 }
 
-/* line 194, ../sass/screen.sass */
+/* line 203, ../sass/screen.sass */
 .container {
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
 }
 
-/* line 199, ../sass/screen.sass */
+/* line 208, ../sass/screen.sass */
 .player {
   position: absolute;
   background: black;
@@ -429,7 +446,7 @@ body {
   -ms-user-select: none;
   user-select: none;
 }
-/* line 214, ../sass/screen.sass */
+/* line 223, ../sass/screen.sass */
 .player .control {
   width: 50px;
   height: 40px;
@@ -437,19 +454,23 @@ body {
   background: #060606;
   float: left;
   display: inline-block;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
-/* line 222, ../sass/screen.sass */
+/* line 232, ../sass/screen.sass */
 .player .control .play, .player .control .pause {
   margin: auto;
   top: 10px;
   position: relative;
 }
-/* line 226, ../sass/screen.sass */
+/* line 236, ../sass/screen.sass */
 .player .control:hover {
   background-color: #324845;
 }
-/* line 228, ../sass/screen.sass */
+/* line 238, ../sass/screen.sass */
 .player .title {
   background: #2b3231;
   width: 240px;
@@ -458,7 +479,7 @@ body {
   display: inline-block;
   text-align: center;
 }
-/* line 235, ../sass/screen.sass */
+/* line 245, ../sass/screen.sass */
 .player .title span {
   color: #b6c2c0;
   font-family: NovecentowideLightBold, "Helvetica Neue", Arial, sans-serif;
@@ -466,7 +487,7 @@ body {
   letter-spacing: 4px;
   line-height: 40px;
 }
-/* line 241, ../sass/screen.sass */
+/* line 251, ../sass/screen.sass */
 .player .activity {
   width: 30px;
   height: 40px;
@@ -474,16 +495,16 @@ body {
   display: inline-block;
   background: #2b3231;
 }
-/* line 247, ../sass/screen.sass */
+/* line 257, ../sass/screen.sass */
 .player .activity .activity-icon {
   margin-top: 10px;
 }
-/* line 249, ../sass/screen.sass */
+/* line 259, ../sass/screen.sass */
 .player .track {
   display: inline-block;
   float: left;
 }
-/* line 252, ../sass/screen.sass */
+/* line 262, ../sass/screen.sass */
 .player .progress {
   width: 1px;
   height: 3px;
@@ -492,7 +513,7 @@ body {
   border-bottom-right-radius: 5px;
 }
 
-/* line 259, ../sass/screen.sass */
+/* line 269, ../sass/screen.sass */
 .nav {
   position: relative;
   text-align: right;
@@ -500,7 +521,7 @@ body {
   margin-right: 70px;
   z-index: 110;
 }
-/* line 265, ../sass/screen.sass */
+/* line 275, ../sass/screen.sass */
 .nav a {
   font-family: NovecentowideLightBold, "Helvetica Neue", Arial, sans-serif;
   font-size: 13px;
@@ -509,12 +530,12 @@ body {
   text-decoration: none;
   margin-left: 20px;
 }
-/* line 272, ../sass/screen.sass */
+/* line 282, ../sass/screen.sass */
 .nav a:hover {
   color: #6e7870;
 }
 
-/* line 275, ../sass/screen.sass */
+/* line 285, ../sass/screen.sass */
 .playlist {
   display: none;
 }
