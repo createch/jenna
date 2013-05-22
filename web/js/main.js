@@ -9,6 +9,7 @@
         var $note = $(".note")
         var $ribbon = $(".ribbon")
         var $logo = $(".logo")
+        var $social = $(".social")
         var ratio = 0.916496945
         var imgw = 0
 
@@ -45,6 +46,11 @@
                     left: "10%",
                     top: "7%"
                 })
+                $social.css({
+                    bottom: "15%",
+                    right: "-5%",
+                    top: "auto"
+                })
             }
             else { // higher width
                 imgw = wh * ratio
@@ -68,7 +74,11 @@
                     top: "10%",
                     left: (20/(2 * wr)) + "%"
                 })
-
+                $social.css({
+                    top: "0%",
+                    bottom: "auto",
+                    right: "0%"
+                })
             }
 
             $(".rtop, .ltop").css({

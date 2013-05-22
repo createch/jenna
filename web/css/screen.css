@@ -368,14 +368,15 @@ body {
   right: 0%;
   top: 0%;
   position: absolute;
+  z-index: 30;
 }
-/* line 159, ../sass/screen.sass */
+/* line 160, ../sass/screen.sass */
 .social a {
   display: inline-block;
   margin-bottom: 8px;
 }
 
-/* line 163, ../sass/screen.sass */
+/* line 164, ../sass/screen.sass */
 .note {
   position: absolute;
   bottom: 0;
@@ -384,13 +385,13 @@ body {
   text-shadow: inset 0 0 50px black;
   display: none;
 }
-/* line 170, ../sass/screen.sass */
+/* line 171, ../sass/screen.sass */
 .note img {
   width: 100%;
   height: auto;
 }
 
-/* line 174, ../sass/screen.sass */
+/* line 175, ../sass/screen.sass */
 .ribbon {
   width: 320px;
   position: absolute;
@@ -399,7 +400,7 @@ body {
   text-align: right;
   overflow: hidden;
 }
-/* line 183, ../sass/screen.sass */
+/* line 184, ../sass/screen.sass */
 .ribbon .now {
   padding-right: 20px;
   height: 30px;
@@ -410,7 +411,7 @@ body {
   letter-spacing: 3px;
   font-size: 13px;
 }
-/* line 192, ../sass/screen.sass */
+/* line 193, ../sass/screen.sass */
 .ribbon .song {
   height: 70px;
   line-height: 70px;
@@ -425,14 +426,14 @@ body {
   text-overflow: ellipsis;
 }
 
-/* line 206, ../sass/screen.sass */
+/* line 208, ../sass/screen.sass */
 .container {
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
 }
 
-/* line 211, ../sass/screen.sass */
+/* line 213, ../sass/screen.sass */
 .player {
   position: absolute;
   background: black;
@@ -449,7 +450,7 @@ body {
   -ms-user-select: none;
   user-select: none;
 }
-/* line 226, ../sass/screen.sass */
+/* line 228, ../sass/screen.sass */
 .player .control {
   width: 50px;
   height: 40px;
@@ -463,17 +464,17 @@ body {
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
-/* line 235, ../sass/screen.sass */
+/* line 237, ../sass/screen.sass */
 .player .control .play, .player .control .pause {
   margin: auto;
   top: 10px;
   position: relative;
 }
-/* line 239, ../sass/screen.sass */
+/* line 241, ../sass/screen.sass */
 .player .control:hover {
   background-color: #324845;
 }
-/* line 241, ../sass/screen.sass */
+/* line 243, ../sass/screen.sass */
 .player .title {
   background: #2b3231;
   width: 240px;
@@ -482,7 +483,7 @@ body {
   display: inline-block;
   text-align: center;
 }
-/* line 248, ../sass/screen.sass */
+/* line 250, ../sass/screen.sass */
 .player .title span {
   color: #b6c2c0;
   font-family: NovecentowideLightBold, "Helvetica Neue", Arial, sans-serif;
@@ -490,7 +491,7 @@ body {
   letter-spacing: 4px;
   line-height: 40px;
 }
-/* line 254, ../sass/screen.sass */
+/* line 256, ../sass/screen.sass */
 .player .activity {
   width: 30px;
   height: 40px;
@@ -498,16 +499,16 @@ body {
   display: inline-block;
   background: #2b3231;
 }
-/* line 260, ../sass/screen.sass */
+/* line 262, ../sass/screen.sass */
 .player .activity .activity-icon {
   margin-top: 10px;
 }
-/* line 262, ../sass/screen.sass */
+/* line 264, ../sass/screen.sass */
 .player .track {
   display: inline-block;
   float: left;
 }
-/* line 265, ../sass/screen.sass */
+/* line 267, ../sass/screen.sass */
 .player .progress {
   width: 1px;
   height: 3px;
@@ -516,7 +517,7 @@ body {
   border-bottom-right-radius: 5px;
 }
 
-/* line 272, ../sass/screen.sass */
+/* line 274, ../sass/screen.sass */
 .nav {
   position: relative;
   text-align: right;
@@ -524,7 +525,7 @@ body {
   margin-right: 70px;
   z-index: 110;
 }
-/* line 278, ../sass/screen.sass */
+/* line 280, ../sass/screen.sass */
 .nav a {
   font-family: NovecentowideLightBold, "Helvetica Neue", Arial, sans-serif;
   font-size: 13px;
@@ -533,12 +534,12 @@ body {
   text-decoration: none;
   margin-left: 20px;
 }
-/* line 285, ../sass/screen.sass */
+/* line 287, ../sass/screen.sass */
 .nav a:hover {
   color: #6e7870;
 }
 
-/* line 288, ../sass/screen.sass */
+/* line 290, ../sass/screen.sass */
 .playlist {
   display: none;
 }
