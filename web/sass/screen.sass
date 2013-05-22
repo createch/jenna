@@ -129,7 +129,7 @@ body
     max-width: 70%
     max-height: 100%
     .jenna
-        right: 50px
+        right: 0px
         max-height: 100%
         max-width: 100%
         position: relative
@@ -144,8 +144,8 @@ body
     position: absolute
     left: 120px
     top: 10%
-    max-width: 40%
     z-index: 90
+    display: none
     img
         height: auto
         width: auto
@@ -164,17 +164,21 @@ body
 .note
     position: absolute 
     bottom: 0
-    margin-bottom: 20px
+    margin-bottom: 100px
+    margin-left: 10px
     text-shadow: inset 0 0 50px #000
+    display: none
     img
-        width: 460px
+        width: 100%
+        height: auto
 
 .ribbon
     width: 320px
     position: absolute
     left: 0
-    bottom: 0
-    margin-bottom: 300px
+    // bottom: 0
+    // margin-bottom: 0
+    display: none
     text-align: right
     overflow: hidden
     .now
