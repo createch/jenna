@@ -32,7 +32,6 @@
                 })
                 $note.css({
                     width: (wh / 3) + "px",
-                    background: "red",
                     bottom: (wh / 3.75) + "px"
                 })
                 t = 1 / wr
@@ -42,7 +41,7 @@
                     transform: "scale(" + t + "," + t + ")"
                 })
                 $logo.css({
-                    width: "70%",
+                    width: wr * 40 + "%",
                     left: "10%",
                     top: "7%"
                 })
@@ -56,29 +55,19 @@
                 })
                 $note.css({
                     bottom: 0,
-                    width: (ww * 0.4) + "px",
-                    background: "blue"
+                    width: (ww * 0.4) + "px"
                 })
-                t = 1.5 * wr
+                t = (1 / (wr * 1.8))
                 $ribbon.css({
                     bottom: ((ww * 0.18) + 100) + "px",
                     left: - t * 100 + "px",
                     transform: "scale(" + t + "," + t + ")"
                 })
                 $logo.css({
-                    "max-width": "40%",
+                    width: "40%",
                     top: "10%",
-                    left: (9/wr) + "%"
+                    left: (20/(2 * wr)) + "%"
                 })
-                // if (wh < 500) {
-                //     $note.css({
-                //         width: (wh / 2) + "px",
-                //         background: "blue"
-                //     })
-                // }
-                // else {
-
-                // }
 
             }
 
